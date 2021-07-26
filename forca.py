@@ -54,7 +54,7 @@ O   |
 
 def abrir():
     a = []
-    arq = open("C:\\Users\\USUARIO\\Documents\\MeuRep\\vspy\game\\palavras.txt","r")
+    arq = open("C:\\Users\\USUARIO\\Documents\\MeuRep\\vspy\\game\\Forca\\palavras.txt","r")
     for p in arq:
         a.append(p)
     palavra = random.choice(a)
