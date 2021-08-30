@@ -54,7 +54,7 @@ O   |
 
 def abrir():
     a = []
-    arq = open("C:\\Users\\USUARIO\\Documents\\MeuRep\\vspy\\game\\Forca\\palavras.txt","r")
+    arq = open("C:\\Users\\USUARIO\\Documents\\MeuRep\\GitHub\\Forca\\palavras.txt","r")
     for p in arq:
         a.append(p)
     palavra = random.choice(a)
@@ -83,7 +83,7 @@ class Forca():
             else:
                 self.con += 1
                 if self.con == len(board)-1:
-                    
+
                     print(board[self.con])
                     self.perdeu()
                     break
@@ -114,7 +114,7 @@ class Forca():
         for i in self.certa:
             print(i, end=' ')
         print()
-        print(f'Letras erradas: ') 
+        print(f'Letras erradas: ')
         for i in self.errada:
             print(i, end=' ')
         self.ganhou(i)
